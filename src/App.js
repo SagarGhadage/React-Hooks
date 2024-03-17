@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import UseRefHook from './Components/UseRef';
+import UseMemoHook from './Components/UseMemoHook';
+import UseCallbackHook from './Components/UseCallback/UseCallback';
+import ParentCopmonent from './Components/UseContext/Parent';
+import CustomHooks from './Components/CostomHooks';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseRefHook></UseRefHook>
+      <UseMemoHook/>
+      <UseCallbackHook/>
+      <ParentCopmonent/>
+      <CustomHooks/>
     </div>
   );
 }
